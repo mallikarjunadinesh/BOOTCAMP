@@ -1,0 +1,39 @@
+SINGLE INHERITANCE
+---------------------------------------------------------------------------------------------------------------------------
+class world{
+    String countryname="INDIA";
+    void place(){
+    }
+}
+class state extends world{
+    String state_name="ANDHRAPRADESH";
+    public static void main(String[] args){
+    state p= new state();
+    p.place();
+    System.out.println("I live in "+p.countryname);
+    }
+}
+
+--------------------------------------------------------------------------------------------------------------------------
+
+MULTI LEVEL INHERITANCE
+
+class world{
+    String countryname="INDIA";
+    void place(){
+    }
+}
+class state extends world{
+    String state_name="ANDHRA PRADESH";
+    void spot(){
+    }
+}
+class district extends state{
+    String district_name="Nellore";
+    public static void main(String[] args){
+        district p=new district();
+        p.place();
+        p.spot();
+        System.out.println("I live in "+p.countryname);
+    }
+}
